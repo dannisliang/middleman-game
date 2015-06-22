@@ -7,9 +7,9 @@ public class Loader : MonoBehaviour {
 	public GameObject soundManager;
 
 	void Awake () {
-		if (GameManager.instance == null)
+		if (gameManager && GameManager.instance == null)
 			Instantiate(gameManager);
-		if (SoundManager.instance == null)
+		if (soundManager && SoundManager.instance == null)
 			Instantiate(soundManager);
 	}
 }
