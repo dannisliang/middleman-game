@@ -5,8 +5,11 @@ using System.Collections;
 public class TextTyper : MonoBehaviour {
 
 	public float letterPause = 0.2f;
-	public AudioClip typeSound1;
-	public AudioClip typeSound2;
+	public AudioClip key1;
+	public AudioClip key2;
+	public AudioClip key3;
+	public AudioClip key4;
+	public AudioClip key5;
 
 	string message;
 	Text textComp;
@@ -22,8 +25,8 @@ public class TextTyper : MonoBehaviour {
 	IEnumerator TypeText () {
 		foreach (char letter in message.ToCharArray()) {
 			textComp.text += letter;
-			if (typeSound1 && typeSound2)
-				SoundManager.instance.RandomizeSfx(typeSound1, typeSound2);
+			if (key1 && key2 && key3 && key4 && key5)
+				SoundManager.instance.RandomizeSfx(key1, key2, key3, key4, key5);
 				yield return 0;
 			yield return new WaitForSeconds (letterPause);
 		}
