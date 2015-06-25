@@ -30,14 +30,14 @@ public class SceneLoader : MonoBehaviour {
 
 	void NextScene() {
 		nextSceneIndex = scenes.IndexOf (Application.loadedLevelName) + 1;
-		if (scenes[nextSceneIndex] != null) {
+		if (nextSceneIndex <= scenes.Count - 1) {
 			Application.LoadLevel (scenes[nextSceneIndex]);
 		}
 	}
 
 	void PrevScene() {
 		prevSceneIndex = scenes.IndexOf (Application.loadedLevelName) - 1;
-		if (scenes[prevSceneIndex] != null) {
+		if (prevSceneIndex >= 0) {
 			Application.LoadLevel (scenes[prevSceneIndex]);
 		}
 	}
