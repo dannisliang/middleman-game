@@ -16,8 +16,10 @@ public class TextTyper : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		string[] wat;
 		textComp = GetComponent<Text>();
 		message = textComp.text;
+		wat = message.Split('\n');
 		textComp.text = "";
 		StartCoroutine(TypeText ());
 	}
