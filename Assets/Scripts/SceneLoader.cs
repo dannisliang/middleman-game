@@ -33,7 +33,6 @@ public class SceneLoader : MonoBehaviour {
 		if (scenes[nextSceneIndex] != null) {
 			Application.LoadLevel (scenes[nextSceneIndex]);
 		}
-		Debug.Log ("prevscene");
 	}
 
 	void PrevScene() {
@@ -41,6 +40,5 @@ public class SceneLoader : MonoBehaviour {
 		if (scenes[prevSceneIndex] != null) {
 			Application.LoadLevel (scenes[prevSceneIndex]);
 		}
-		Debug.Log ("nextscene");
 	}
 }
