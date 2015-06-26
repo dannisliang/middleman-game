@@ -3,7 +3,6 @@ Temp
 Library
 
 # vs/mono Generated
-
 ExportedObj
 obj
 *.svd
@@ -30,3 +29,7 @@ Builds
 
 # bobun crap
 *~
+
+# fatty dirs
+Video
+Video.meta
