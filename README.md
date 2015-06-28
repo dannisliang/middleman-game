@@ -1,6 +1,6 @@
 # middleman-game
 Presentation Tool Built in Unity3d 5.1.1
-Inspired by Roguelike Tutorial http://unity3d.com/learn/tutorials/projects/2d-roguelike
+Inspired by Roguelike Tutorial http://unity3d.com/learn/tutorials/projects/2d-roguelike and a desire to get more familiar with Unity3d's new UI system.
 _____
 ####Open in Unity 5 -> build -> enjoy
 
